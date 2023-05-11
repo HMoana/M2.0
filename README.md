@@ -50,7 +50,7 @@ The purpose of this project is to showcase the use of the Microsoft cloud comput
 1. Clone the repo
 
    ```sh
-   git clone https://github.com/HMoana/M2.git
+   git clone https://github.com/HMoana/M2.0.git
    ```
 
 2. Install NPM packages
@@ -81,7 +81,7 @@ Heni Kimura - henace86@gmail.com
 
 ### **Project Link:**
 
-[Github repository](https://github.com/HMoana/M2.git "Github repository")
+[Github repository](https://github.com/HMoana/M2.0.git "Github repository")
 
 ### **License:**
 
