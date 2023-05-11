@@ -1,0 +1,14 @@
+// MEDIA QUERY MOBILE
+@media (max-width: 700px) {
+  .showcase {
+    height: 800px;
+    clip-path: none;
+    & .showcase__content {
+      text-align: center;
+
+      iframe {
+        width: 80%;
+      }
+    }
+  }
+}

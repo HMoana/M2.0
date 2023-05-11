@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap");
+.m-1 {
+  margin: 1rem;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.my-2 {
+  margin: 2rem 0;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.m-3 {
+  margin: 3rem;
+}
+
+.my-3 {
+  margin: 3rem 0;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.m-4 {
+  margin: 4rem;
+}
+
+.my-4 {
+  margin: 4rem 0;
+}
+
+.p-4 {
+  padding: 4rem;
+}
+
+.py-4 {
+  padding: 4rem 0;
+}
+
+.m-5 {
+  margin: 5rem;
+}
+
+.my-5 {
+  margin: 5rem 0;
+}
+
+.p-5 {
+  padding: 5rem;
+}
+
+.py-5 {
+  padding: 5rem 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #2b303e;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  color: #f4f4f4;
+}
+body .footer {
+  text-align: center;
+  padding-top: 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.showcase {
+  background-color: #0e6cff;
+  color: #fff;
+  height: 740px;
+  clip-path: polygon(0 0, 100% 0, 79% 100%, 23% 100%);
+}
+.showcase .showcase__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.showcase .showcase__nav .showcase__nav--logo {
+  text-decoration: solid;
+  font-weight: bolder;
+  font-size: 20px;
+}
+.showcase .showcase__nav ul {
+  display: flex;
+  list-style-type: none;
+}
+.showcase .showcase__nav li {
+  padding: 15px;
+  font-weight: bolder;
+}
+.showcase .showcase__nav a {
+  color: #fff;
+}
+.showcase .showcase__nav a:hover {
+  color: #2b303e;
+}
+.showcase .showcase__content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+}
+.showcase .showcase__content iframe {
+  width: 100%;
+}
+.showcase .showcase__content h1 {
+  font-size: 38px;
+  font-style: italic;
+  line-height: 1.2;
+  padding: 20px;
+}
+
+.showcase__container {
+  max-width: 1100px;
+  padding: 0 30px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+@media (max-width: 700px) {
+  .showcase {
+    height: 800px;
+    clip-path: none;
+  }
+  .showcase .showcase__content {
+    text-align: center;
+  }
+  .showcase .showcase__content iframe {
+    width: 80%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,84 @@
+// IMPORTS
+@import "config";
+
+// STYLES MAIN
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $secondary-color;
+  font-family: $font-stack;
+  line-height: 1.6;
+  color: $light-color;
+
+  & .footer {
+    text-align: center;
+    padding-top: 15px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.showcase {
+  @include set-background($primary-color);
+  height: 740px;
+  clip-path: polygon(0 0, 100% 0, 79% 100%, 23% 100%);
+
+  & .showcase__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & .showcase__nav--logo {
+      text-decoration: solid;
+      font-weight: bolder;
+      font-size: 20px;
+    }
+
+    ul {
+      display: flex;
+      list-style-type: none;
+    }
+
+    li {
+      padding: 15px;
+      font-weight: bolder;
+    }
+
+    a {
+      color: set-text-color($primary-color);
+    }
+
+    a:hover {
+      color: $secondary-color;
+    }
+  }
+
+  & .showcase__content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+
+    iframe {
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 38px;
+      font-style: italic;
+      line-height: 1.2;
+      padding: 20px;
+    }
+  }
+}
+
+// IMPORTS CONTD
+@import "utilities";
+@import "mobile";

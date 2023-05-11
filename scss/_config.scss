@@ -1,0 +1,43 @@
+// IMPORTS FONTS
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap");
+
+// CONFIG COLORS
+$font-stack: "Roboto", sans-serif;
+$primary-color: #0e6cff;
+$secondary-color: #2b303e;
+$light-color: #f4f4f4;
+
+// FUNCTION SET TEXT COLOR BASED ON BACKGROUND
+@function set-text-color($color) {
+  @if (lightness($color) > 70) {
+    @return #333;
+  } @else {
+    @return #fff;
+  }
+}
+
+// SET BACKGROUND & TEXT COLOR
+@mixin set-background($color) {
+  background-color: $color;
+  color: set-text-color($color);
+}
+
+// USE LOOP FOR MARGIN & PADDING CLASSES
+$spaceamounts: (1, 2, 3, 4, 5);
+
+@each $space in $spaceamounts {
+  .m-#{$space} {
+    margin: #{$space}rem;
+  }
+  .my-#{$space} {
+    margin: #{$space}rem 0;
+  }
+
+  .p-#{$space} {
+    padding: #{$space}rem;
+  }
+  .py-#{$space} {
+    padding: #{$space}rem 0;
+  }
+}
